@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+    <title> Electricity bills calculator</title>
+</head>
+<body>
+
+    <div class="big-container">
+        <h1> GAS AND ELECTRICITY CALCULATOR </h1>
+        <form class="gas-calculator">
+
+            Gas meter reading: <input type="text"  value="" id="gas-meter-reading"> 
+            <button id="gas-submit-btn" onclick='changeText()' value='Submit'> Submit </button> <br>
+
+            Gas units used: <span type="text id="gas-units"> </span><br>
+
+            <div id="gas-total-box"> Total gas 
+                <span class="gas-total">  </span>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
