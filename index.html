@@ -13,14 +13,22 @@
 
     <div class="big-container">
         <h1> GAS AND ELECTRICITY CALCULATOR </h1>
+
+        <h2>Last reading: 11 000 </h2>
+
         <form class="gas-calculator">
 
-            Gas meter reading: <input type="text"  value="" id="gas-meter-reading"> 
-            <button id="gas-submit-btn" onclick='changeText()' value='Submit'> Submit </button> <br>
+            CURRENT:  <input type="text" label="Current" id="inputGas"> 
 
-            Gas units used: <span type="text id="gas-units"> </span><br>
+            <button id="gas-submit-btn" value='Submit'> Submit </button>
+             <br>
 
-            <div id="gas-total-box"> Total gas 
+            Extra consumption: <span id="extra-cons"> </span><br>
+            
+            <p> <span id="box-10p">----</span> X 10p = £ <span id="total-10p">----</span></p>
+            <p> <span id="box-20p">----</span> X 10p = £ <span id="total-20p">----</span></p>
+
+            <div id="gas-total-box"> Total (gas)
                 <span class="gas-total">  </span>
             </div>
 

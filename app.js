@@ -1,15 +1,13 @@
-
-const inputGas = document.querySelector('#gas-meter-reading');
-let gasUnits = document.querySelector('#gas-units');
+const inputGas = document.getElementById('inputGas');
+const extraCons = document.getElementById('extra-cons');
 const gasSubmitBtn = document.querySelector('#gas-submit-btn');
     
 // gasUnit.value = 11000;
 
-// inputGas.addEventListener('keyup', changeText);
+inputGas.addEventListener('change', changeText);
 
 function changeText() {
-    let userInput = inputGas.value;
-    gasUnits.innerHTML = userInput;
+    extraCons.innerHTML = inputGas.value;
     console.log(userInput);
 }
 
@@ -21,3 +19,4 @@ function calculateGasBill() {
         let remaining = extraConsumption - 100;
         return Number(((remaining * 20 + 1000) / 100).toFixed(2));
     }
+}
